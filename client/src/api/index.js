@@ -1,8 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  // baseURL: "https://stack-overflow-eight.vercel.app/",
-  baseURL: "http://localhost:5500",  //front end url
+  baseURL: "https://stack-overflow-clone-abse.onrender.com",
 });
 
 API.interceptors.request.use((req) => {

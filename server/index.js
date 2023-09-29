@@ -10,6 +10,7 @@ import connectDB from "./connectMongoDb.js";
 dotenv.config();
 connectDB();
 const app = express();
+app.set('trust proxy' , true)
 app.use(express.json({ limit: "30mb", extended: true }));
 app.use(express.urlencoded({ limit: "30mb", extended: true }));
 app.use(cors());
